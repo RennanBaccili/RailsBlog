@@ -1,13 +1,13 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: %i[ show edit update destroy ]
+  before_action :set_post, only: %i[ show edit update destroy ] #@post = Post.find(params[:id])
 
   # GET /posts or /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all #retorna todas opções
   end
 
   # GET /posts/1 or /posts/1.json
-  def show
+  def show #show pega o id, e retorna o post pelo id
   end
 
   # GET /posts/new
